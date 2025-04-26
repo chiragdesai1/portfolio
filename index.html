@@ -158,6 +158,35 @@
             background-color: #f8f9fa;
             border-left: 4px solid #3498db;
         }
+
+        .skill-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-group h3 {
+            color: #2c3e50;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .skills-section .skill-tag {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 0.5rem;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .skills-section .skill-tag:hover {
+            background-color: #c8e6c9;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
@@ -247,18 +276,45 @@
         <section id="skills" class="section skills-section">
             <h2>Technical Skills</h2>
             <div>
-                <span class="skill-tag">Azure Security</span>
-                <span class="skill-tag">GCP Security</span>
-                <span class="skill-tag">Zero Trust Architecture</span>
-                <span class="skill-tag">Landing Zone Design</span>
-                <span class="skill-tag">Hub-and-Spoke Network</span>
-                <span class="skill-tag">Cloud Security Controls</span>
-                <span class="skill-tag">IAM/RBAC</span>
-                <span class="skill-tag">Security Posture Management</span>
-                <span class="skill-tag">Cloud Governance</span>
-                <span class="skill-tag">DevSecOps</span>
-                <span class="skill-tag">Infrastructure as Code</span>
-                <span class="skill-tag">Compliance Automation</span>
+                <h3>Cloud Security Architecture</h3>
+                <div class="skill-group">
+                    <span class="skill-tag">Azure Well-Architected Framework</span>
+                    <span class="skill-tag">GCP Security Foundation</span>
+                    <span class="skill-tag">Azure Landing Zone</span>
+                    <span class="skill-tag">GCP Landing Zone</span>
+                    <span class="skill-tag">Hub-and-Spoke Network</span>
+                    <span class="skill-tag">Zero Trust Architecture</span>
+                </div>
+
+                <h3>Prisma Cloud Security Suite</h3>
+                <div class="skill-group">
+                    <span class="skill-tag">CSPM Configuration & Operations</span>
+                    <span class="skill-tag">CWP Implementation & Management</span>
+                    <span class="skill-tag">CIEM Access Management</span>
+                    <span class="skill-tag">DSPM Data Protection</span>
+                    <span class="skill-tag">Cloud Security Posture</span>
+                    <span class="skill-tag">Compliance Automation</span>
+                </div>
+
+                <h3>Security Operations</h3>
+                <div class="skill-group">
+                    <span class="skill-tag">Security Monitoring</span>
+                    <span class="skill-tag">Incident Response</span>
+                    <span class="skill-tag">Threat Detection</span>
+                    <span class="skill-tag">Vulnerability Management</span>
+                    <span class="skill-tag">Security Automation</span>
+                    <span class="skill-tag">DevSecOps Integration</span>
+                </div>
+
+                <h3>Cloud Platforms & Tools</h3>
+                <div class="skill-group">
+                    <span class="skill-tag">Azure Security Center</span>
+                    <span class="skill-tag">GCP Security Command Center</span>
+                    <span class="skill-tag">Azure Policy</span>
+                    <span class="skill-tag">GCP Organization Policies</span>
+                    <span class="skill-tag">Infrastructure as Code</span>
+                    <span class="skill-tag">Cloud Governance</span>
+                </div>
             </div>
         </section>
 
