@@ -3,37 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Security Engineer Portfolio</title>
+    <title>Chirag R. Desai - Cloud Security Engineer Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: #333;
             margin: 0;
             padding: 0;
+            background-color: #f8f9fa;
         }
         
         header {
             background-color: #2c3e50;
             color: white;
+            padding: 40px 0;
             text-align: center;
-            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         nav {
             background-color: #34495e;
             padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 1rem;
+            transition: color 0.3s ease;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 30px;
         }
 
         .project-grid {
@@ -45,8 +75,14 @@
 
         .project-card {
             border: 1px solid #ddd;
-            padding: 1rem;
-            border-radius: 5px;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .skills-section {
@@ -54,12 +90,57 @@
         }
 
         .skill-tag {
-            background-color: #3498db;
-            color: white;
-            padding: 0.5rem 1rem;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 8px 15px;
             border-radius: 20px;
             display: inline-block;
             margin: 0.5rem;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background-color: #c8e6c9;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .position {
+            font-weight: bold;
+            color: #34495e;
+            margin: 0.25rem 0;
+        }
+
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+            margin: 0.25rem 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #3498db;
         }
 
         footer {
@@ -67,130 +148,103 @@
             color: white;
             text-align: center;
             padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 2rem;
         }
 
-        .resume-section {
-            margin: 2rem 0;
-            padding: 1rem;
-            background-color: #f8f9fa;
-            border-radius: 5px;
-        }
-        
-        .experience-item {
-            margin-bottom: 1.5rem;
-        }
-        
-        .experience-item h4 {
-            margin-bottom: 0.5rem;
-            color: #2c3e50;
-        }
-        
-        .position {
-            font-weight: bold;
-            color: #34495e;
-            margin: 0.25rem 0;
-        }
-        
-        .date {
-            color: #7f8c8d;
+        .objective {
             font-style: italic;
-            margin: 0.25rem 0;
-        }
-        
-        .experience-item ul {
-            margin-top: 0.5rem;
-        }
-
-        .project-card a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        
-        .project-card a:hover {
-            text-decoration: underline;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Cloud Security Engineer Portfolio</h1>
-        <p>Securing the Cloud, One Project at a Time</p>
+        <div class="container">
+            <h1>Chirag R. Desai</h1>
+            <p>Cloud Security Engineer</p>
+            <div class="contact-info">
+                <a href="mailto:cdesai40@gmail.com">cdesai40@gmail.com</a>
+                <a href="tel:201-668-0710">201-668-0710</a>
+                <a href="https://www.linkedin.com/in/-chiragdesai" target="_blank">LinkedIn</a>
+            </div>
+        </div>
     </header>
 
     <nav>
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <div class="container">
-        <section id="about">
+        <section id="about" class="section">
             <h2>About Me</h2>
-            <p>Cloud Security Engineer at Chubb with expertise in multi-cloud security architecture, specializing in Azure, GCP, and modern security frameworks including Zero Trust and Landing Zone implementations.</p>
+            <p>Cloud Security Engineer with six years of professional experience and a strong focus on security best practices. Experienced in designing, implementing, and managing secure, scalable, and resilient solutions in multi-cloud environments. Proficient in network security, cloud architecture, compliance frameworks, threat analysis, and incident response.</p>
             
-            <div class="resume-section">
-                <h3>Professional Experience</h3>
-                <div class="experience-item">
-                    <h4>Chubb</h4>
-                    <p class="position">Cloud Security Engineer</p>
-                    <p class="date">Present</p>
-                    <ul>
-                        <li>Implementing cloud security controls and governance across Azure and GCP environments</li>
-                        <li>Designing and maintaining secure cloud architectures using Hub-and-Spoke and Landing Zone models</li>
-                        <li>Leading Zero Trust security initiatives and cloud security best practices</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="resume-section">
-                <h3>Education</h3>
-                <!-- Add your education details from resume -->
-            </div>
-            
-            <div class="resume-section">
-                <h3>Certifications</h3>
-                <!-- Add your certifications from resume -->
+            <div class="objective">
+                <p><strong>Objective:</strong> Aspirant to work at a product-focused company, leveraging expertise in cloud security engineering to design, architect, and implement secure solutions in Azure and GCP environments. Passionate about applying Zero Trust principles, enforcing security best practices, and delivering robust, scalable cloud infrastructures through end-to-end deployment.</p>
             </div>
         </section>
 
-        <section id="projects">
+        <section id="experience" class="section">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Lead Cloud Security Engineer</h3>
+                <p class="position">Chubb</p>
+                <p class="date">January 2019 – Present</p>
+                <ul>
+                    <li>Designed and implemented Azure and GCP environments from inception to enterprise deployment</li>
+                    <li>Developed and enforced Zero Trust models with conditional access policies</li>
+                    <li>Implemented IAM solutions with entitlement management using CIEM tools</li>
+                    <li>Designed and deployed solutions for network segmentation and workload protection</li>
+                    <li>Supported application migrations from on-premises to multi-cloud environments</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Network Security Engineer</h3>
+                <p class="position">LinkPro Technologies</p>
+                <p class="date">January 2016 – December 2018</p>
+                <ul>
+                    <li>Designed and implemented network security architecture in Azure</li>
+                    <li>Established security benchmarks with Azure Policies</li>
+                    <li>Deployed and managed Palo Alto firewalls for traffic filtering</li>
+                    <li>Applied OWASP Top 10 framework for application security</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
             <h2>Featured Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
                     <h3>Maroli LLC Website</h3>
                     <p>Developed and maintained the corporate website for Maroli LLC, showcasing their services and expertise.</p>
                     <p>Website: <a href="http://www.maroliallc.com" target="_blank">www.maroliallc.com</a></p>
-                    <p>Technologies: Web Development, UI/UX Design, Responsive Design</p>
                 </div>
                 <div class="project-card">
                     <h3>CuldeSec Platform</h3>
                     <p>Contributed to the development of CuldeSec's security platform and web presence.</p>
                     <p>Website: <a href="http://www.culdesec.com" target="_blank">www.culdesec.com</a></p>
-                    <p>Technologies: Security Platform Development, Web Development</p>
-                </div>
-                <div class="project-card">
-                    <h3>Cloud Security Assessment Tool</h3>
-                    <p>Developed an automated security assessment tool for cloud infrastructure using Python and AWS SDK.</p>
-                    <p>Technologies: AWS, Python, Security Controls</p>
                 </div>
                 <div class="project-card">
                     <h3>Zero Trust Architecture Implementation</h3>
                     <p>Designed and implemented a zero trust security model for a multi-cloud environment.</p>
-                    <p>Technologies: Azure AD, AWS IAM, Network Security</p>
                 </div>
                 <div class="project-card">
                     <h3>Security Monitoring Dashboard</h3>
                     <p>Created a comprehensive security monitoring dashboard using ELK stack.</p>
-                    <p>Technologies: Elasticsearch, Kibana, Log Analysis</p>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="skills-section">
+        <section id="skills" class="section skills-section">
             <h2>Technical Skills</h2>
             <div>
                 <span class="skill-tag">Azure Security</span>
@@ -208,16 +262,18 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="section">
             <h2>Contact</h2>
-            <p>Email: crdesai@hotmail.com</p>
-            <p>LinkedIn: linkedin.com/in/yourprofile</p>
-            <p>GitHub: github.com/yourusername</p>
+            <div class="contact-info">
+                <a href="mailto:cdesai40@gmail.com">cdesai40@gmail.com</a>
+                <a href="tel:201-668-0710">201-668-0710</a>
+                <a href="https://www.linkedin.com/in/-chiragdesai" target="_blank">LinkedIn</a>
+            </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2023 Cloud Security Engineer Portfolio. All rights reserved.</p>
+        <p>&copy; 2024 Chirag R. Desai - Cloud Security Engineer Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
